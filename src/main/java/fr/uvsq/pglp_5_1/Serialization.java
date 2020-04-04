@@ -1,7 +1,6 @@
-package fr.uvsq.pglp.dao.crud;
+package fr.uvsq.pglp_5_1;
 
-import fr.uvsq.pglp.dao.crud.AbstractDAOFactory.DAOType;
-import fr.uvsq.pglp.dao.crud.Personnel.PersonnelBuilder;
+import fr.uvsq.pglp_5_1.AbstractDAOFactory.DAOType;
 
 public enum Serialization {
 	ENVIRONNEMENT;
@@ -33,10 +32,9 @@ public enum Serialization {
 	}
 	
 	public static void main(String[] args) {
-		JdbcInitializer jinit = new JdbcInitializer();
-		jinit.dropCreateTables(); // the 1st time, use jinit.createTables()
-		// ENVIRONNEMENT.run(args, DAOType.Serial);
-		ENVIRONNEMENT.run(args, DAOType.JDBC);
+		
+		ENVIRONNEMENT.run(args, DAOType.Serial);
+		//ENVIRONNEMENT.run(args, DAOType.JDBC);
 	}
 	
 }
