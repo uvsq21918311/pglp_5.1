@@ -34,7 +34,7 @@ public enum Serialization {
 	public static void main(String[] args) {
 		
 		ENVIRONNEMENT.run(args, DAOType.Serial);
-		//ENVIRONNEMENT.run(args, DAOType.JDBC);
+		
 	}
 	
 }
