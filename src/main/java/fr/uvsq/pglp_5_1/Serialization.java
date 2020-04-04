@@ -13,22 +13,22 @@ public enum Serialization {
 				.getFactory(dt)
 				.getPersonnelGroupeDAO();
 		// Creation personnel
-		Personnel ELKADI = new PersonnelBuilder("EL KADI", "Kamal", "Employé")
-				   			.build();
 		Personnel Kamal = new PersonnelBuilder("EL KADI", "Kamal", "Employé")
+				   			.build();
+		Personnel Henry = new PersonnelBuilder("David", "Henry", "Employé")
 							.build();
 		PersonnelGroupe pg = new PersonnelGroupe();
 		PersonnelGroupe spg = new PersonnelGroupe();
 		pg.addPersonnel(spg);
-		pg.addPersonnel(Kamal);
-		spg.addPersonnel(ELKADI);
+		pg.addPersonnel(Henry);
+		spg.addPersonnel(Kamal);
 		// Ajout DAO
 		pgDAO.create(pg);
 		pgDAO.create(spg);
-		personnelDAO.create(ELKADI); // update
 		personnelDAO.create(Kamal); // update
+		personnelDAO.create(Henry); // update
 		System.out.println("\t" + pgDAO.read(spg.getId()));
-		System.out.println("\t" + personnelDAO.read("Kamal"));
+		System.out.println("\t" + personnelDAO.read("Henry"));
 	}
 	
 	public static void main(String[] args) {

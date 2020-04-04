@@ -8,19 +8,13 @@ public class NumeroTelephone implements Serializable {
 	
 	private String nom;
 	private String telephone;
-	
-	/**
-	 * @param nom Nom
-	 * @param telephone Telephone
-	 */
+
 	public NumeroTelephone(String nom, String telephone) {
 		this.nom = nom;
 		this.telephone = telephone;
 	}
 
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
+	
 	@Override
 	public String toString() {
 		return nom + " - " + telephone;
@@ -56,9 +50,6 @@ public class NumeroTelephone implements Serializable {
 
 	
 	
-	/* (non-Javadoc)
-	 * @see java.lang.Object#hashCode()
-	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -68,9 +59,7 @@ public class NumeroTelephone implements Serializable {
 		return result;
 	}
 
-	/* (non-Javadoc)
-	 * @see java.lang.Object#equals(java.lang.Object)
-	 */
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
