@@ -1,4 +1,4 @@
-package fr.uvsq.pglp.dao.crud;
+package fr.uvsq.pglp_5_1;
 
 public class PersonnelSerialDAO extends SerialDAO<Personnel> {
 
