@@ -10,8 +10,10 @@ import java.util.stream.Collectors;
 
 public final class Personnel extends PersonnelType {
 
-	private static final long serialVersionUID = 1L;
 	
+	
+	
+	private static final long serialVersionUID = 1L;
 	private final String nom;
 	private final String prenom;
 	private final String fonction;
